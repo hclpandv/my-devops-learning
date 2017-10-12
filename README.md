@@ -9,7 +9,7 @@ After checking out the code and run a few commands, you will have a web service 
 *Deployment* - Simple build and run scripts for setting up the web service to run inside **Docker**
 *JSON request* - Processing **JSON data in HTTP request/response** with CherryPy
 
-####Requirements
+#### Requirements
 - OS: Linux (e.g. Ubuntu 16.04)
 - Docker CE installed
 - Postman installed (use for testing the API)
@@ -102,13 +102,13 @@ http://localhost:8080/ml
 - Coming soon
 
 ### Run options
-####Run with SSL enabled
+#### Run with SSL enabled
 Append --ssl to the docker command:
 ```
 docker run cherrypy-ws:latest --ssl
 ```
 
-####Run in detached mode
+#### Run in detached mode
 Add -d flag:
 ```
 docker run -d cherrypy-ws:latest
