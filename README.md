@@ -4,7 +4,6 @@ This project is designed to be a starting point for those building a RESTful API
 
 After checking out the code and run a few commands, you will have a web service running in Docker.   This example API comes with some core features considered important for hosting a data processing API in the public cloud:
 - *Security* - Secure and restrict access to API by enabling **SSL** and **HTTP authentication**
-- *Data Transfer* - Processing csv files in **HTTP multipart request**
 - *Logging* - Enable **file and console logging**, ability to customise logging level at startup 
 - *Deployment* - Simple build and run scripts for setting up the web service to run inside **Docker**
 - *JSON request* - Processing **JSON data in HTTP request/response** with CherryPy
