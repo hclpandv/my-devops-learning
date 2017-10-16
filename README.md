@@ -3,11 +3,11 @@ RESTful API for data processing using Python CherryPy
 This project is designed to be a starting point for those building a RESTful API for data processing using python.  Providers like Amazon and Azure do offer some common machine learning tools and libraries at users' convenience but there are times when you need to implement your own python code solve complex problems.  
 
 After checking out the code and run a few commands, you will have a web service running in Docker.   This example API comes with some core features considered important for hosting a data processing API in the public cloud:
-*Security* - Secure and restrict access to API by enabling **SSL** and **HTTP authentication**
-*Data Transfer* - Processing csv files in **HTTP multipart request**
-*Logging* - Enable **file and console logging**, ability to customise logging level at startup 
-*Deployment* - Simple build and run scripts for setting up the web service to run inside **Docker**
-*JSON request* - Processing **JSON data in HTTP request/response** with CherryPy
+- *Security* - Secure and restrict access to API by enabling **SSL** and **HTTP authentication**
+- *Data Transfer* - Processing csv files in **HTTP multipart request**
+- *Logging* - Enable **file and console logging**, ability to customise logging level at startup 
+- *Deployment* - Simple build and run scripts for setting up the web service to run inside **Docker**
+- *JSON request* - Processing **JSON data in HTTP request/response** with CherryPy
 
 #### Requirements
 - OS: Linux (e.g. Ubuntu 16.04)
@@ -21,6 +21,7 @@ From continuumio/miniconda3
 ```
 - This docker image is using continuumio/miniconda3 as the base image with python 3 pre-installed.  You can choose to start with other Linux images and install python 3 on top.
 <br />
+
 ``` 
 RUN pip install cherrypy==11.0
 RUN pip install pandas==0.20.3
