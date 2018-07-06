@@ -1,10 +1,10 @@
-RESTful API for data processing using Python CherryPy
+Python RESTful API
 -------------
-This project is designed to be a starting point for those building a RESTful API for data processing using python.  Providers like Amazon and Azure do offer some common machine learning tools and libraries at users' convenience but there are times when you need to implement your own python code solve complex problems.  
+This project is designed to be a starting point for those building a RESTful API for data processing using python.  Providers like Amazon (and many others) do offer some common machine learning APIs at users' convenience but there are times when you need to implement your own methods for solving specific problems.
 
-After checking out the code and run a few commands, you will have a web service running in Docker.   This example API comes with some core features considered important for hosting a data processing API in the public cloud:
+After checking out the code and run a few commands, you will have a web service running in Docker.   This example API comes with some core features considered important for hosting data processing API in the public cloud:
 - *Security* - Secure and restrict access to API by enabling **SSL** and **HTTP authentication**
-- *Logging* - Enable **file and console logging**, ability to customise logging level at startup 
+- *Logging* - **File and console logging** for diagnostic purposes, supports different logging level
 - *Deployment* - Simple build and run scripts for setting up the web service to run inside **Docker**
 - *JSON request* - Processing **JSON data in HTTP request/response** with CherryPy
 
@@ -14,11 +14,11 @@ After checking out the code and run a few commands, you will have a web service 
 - Postman installed (use for testing the API)
 <br/>
 
-## Dockerfile
+## Dockerfile explained
 ``` 
-From continuumio/miniconda3
+From python:3.6.4-slim-jessie
 ```
-- This docker image is using continuumio/miniconda3 as the base image with python 3 pre-installed.  You can choose to start with other Linux images and install python 3 on top.
+- The docker image built for this API is based on the published python 3.6.4 docker image.
 <br />
 
 ``` 
@@ -26,7 +26,7 @@ RUN pip install cherrypy==11.0
 RUN pip install pandas==0.20.3
 RUN pip install numpy==1.13.1
 ```
-- Install cherrypy and other packages required for data processing 
+- First, some python packages need to be installed. Cherrypy is required for running the web service, plus other packages required for data processing.
 <br />
 
 ``` 
@@ -34,16 +34,14 @@ WORKDIR /ws
 ADD ws.py .
 RUN mkdir logs
 ```
-- Create a working directory called *ws* for storing the python script, data files and log files
+- Next, a working directory called *ws* is created for storing the python script, data files and log files
 <br />
 
 ```
 ENTRYPOINT ["python", "/ws/ws.py"]
 CMD ["--logLevel", "INFO"]
 ``` 
-- The ENTRYPOINT command defines the command to run when container starts up - i.e. python /ws/ws.py.  The subsequent CMD command defined the default arguments to be passed into ws.py.  You can override these default parameters when using the docker run, this will be discussed later.
-
-<br/>
+- Finally, the ENTRYPOINT defines the command to run when the container starts up - i.e. python /ws/ws.py.  The subsequent CMD command defined the default arguments to be passed into ws.py, here the log level is default to INFO.  You can override these default parameters when using the docker run - an example would be to enable ssl using the --ssl parameter, the full command is provided later in this post.
 
 ## Installation: 
 ### Build Docker image
@@ -54,12 +52,14 @@ MY_USERS = {'myuser': 'password_for_myuser'}
 ```
 - [Optional] To enable SSL, put the certificate and private key into the project directory and named them as *cert.pem* and *privkey.pem* respectively
 
-- Navigate to project directory and build the docker image with a tag:
+- Navigate to project directory and build the docker image with a tag specified:
 ```
 docker build -t cherrypy-ws .
 ```
-This will build a docker image and with tag *cherrypy-ws*.
 <br/>
+
+## Web Service python script explained
+Cherrypy
 
 ### Start web service
 - Run docker container:

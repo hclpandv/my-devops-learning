@@ -1,4 +1,4 @@
-From continuumio/miniconda3
+From python:3.6.4-slim-jessie
 
 RUN pip install cherrypy==11.0
 
@@ -8,6 +8,7 @@ RUN pip install numpy==1.13.1
 
 WORKDIR /ws
 ADD ws.py .
+ADD myprocessor.py .
 RUN mkdir logs
 
 # Start web service
