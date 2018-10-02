@@ -1,3 +1,5 @@
+https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/  
+
 https://github.com/maciejd/restful-api-python-flask/blob/master/app.py
 
 https://codeburst.io/this-is-how-easy-it-is-to-create-a-rest-api-8a25122ab1f3
