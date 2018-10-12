@@ -1,3 +1,10 @@
+## New Tasks | 12 OCT 2018
+
+https://gist.github.com/drgarcia1986/386a7546fa9c8ba47f39
+
+###########
+###########
+# OLD STUFF
 https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/  
 
 https://github.com/maciejd/restful-api-python-flask/blob/master/app.py
