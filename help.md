@@ -2,6 +2,8 @@
 
 https://gist.github.com/drgarcia1986/386a7546fa9c8ba47f39
 
+https://www.kevinlondon.com/2016/09/19/devops-from-scratch-pt-1.html
+
 ### Requirement:
 https://bitbucket.org/azneita/devops-challenge/src/e62b3527b4a7b0256ec0e05666e2c8d3be5495d1/devops-challenge.md?fileviewer=file-view-default
 
