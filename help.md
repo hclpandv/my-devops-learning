@@ -2,6 +2,8 @@
 
 https://gist.github.com/drgarcia1986/386a7546fa9c8ba47f39
 
+https://www.bogotobogo.com/DevOps/Vagrant/Vagrant_Ansible.php
+
 https://www.kevinlondon.com/2016/09/19/devops-from-scratch-pt-1.html
 
 ### Requirement:
