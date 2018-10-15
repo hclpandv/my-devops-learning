@@ -8,6 +8,10 @@ https://www.kevinlondon.com/2016/09/19/devops-from-scratch-pt-1.html
 
 https://serversforhackers.com/c/an-ansible2-tutorial
 
+##### nginx non priviledged user
+
+https://github.com/GSA/ansible-https-proxy/issues/1
+
 ##### Good Video on ansible, Vagrant
 
 https://www.youtube.com/watch?v=GbK7GNwcNrI
