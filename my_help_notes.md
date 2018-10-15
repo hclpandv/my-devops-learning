@@ -6,6 +6,12 @@ https://www.bogotobogo.com/DevOps/Vagrant/Vagrant_Ansible.php
 
 https://www.kevinlondon.com/2016/09/19/devops-from-scratch-pt-1.html
 
+https://serversforhackers.com/c/an-ansible2-tutorial
+
+##### Good Video on ansible, Vagrant
+
+https://www.youtube.com/watch?v=GbK7GNwcNrI
+
 ### Requirement:
 https://bitbucket.org/azneita/devops-challenge/src/e62b3527b4a7b0256ec0e05666e2c8d3be5495d1/devops-challenge.md?fileviewer=file-view-default
 
