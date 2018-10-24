@@ -1,5 +1,7 @@
 ## New Tasks | 12 OCT 2018
 
+https://www.thegeekstuff.com/2010/07/rpm-command-examples/
+
 https://gist.github.com/drgarcia1986/386a7546fa9c8ba47f39
 
 https://www.bogotobogo.com/DevOps/Vagrant/Vagrant_Ansible.php
