@@ -1,46 +1,35 @@
-## Clone repo
+# Assignment for Technical Interview 
 
-    git clone ssh://ec2-user@35.156.211.147:/srv/git/slot.git
+The Goal was to restore all the missing pieces of a damaged infrastructure consists of a Jenkins server, a Git server and a Static server (where an application was deployed erlier and running as of now)  
 
- 
+the application currently running at http://18.195.116.69/
 
-## Build distribution package
+## How the goal is achieved
 
-    npm run build:rpm
+* the git server is re-stored uisng the tar file provided to me via a cloud link.
+* below command can be used to clone the repository on any workstation . make sure you have ssh keys in place on your system.
 
-RPM requires httpd and installs the following files/directories to the /var/www/html directory:
+    git clone ssh://ec2-user@54.93.218.82:/srv/git/slot.git
+    
+* the package.json was re-stored from `./build/SOURCE` folder which had missing links to call and execute `buildRpm.sh` script to build the RPM.
 
-    ./images/**/*
-    ./index.html
-    ./js/**/*
+* a seperate `deployRpm.sh` file is written to deploy the RPM package build.
 
- 
-Created RPM will be located here
+* the jenkins server was missing all previous configuration and hence a new pipeline project was created to achieve the expeceted flow.
 
-    ./build/RPMS/x86_64/netent-slot-1.0.1-1.el7.centos.x86_64.rpm
+* pipeline project is using the git-server repo and a scripted `Jenkinsfile` is created on the root of the repo.
 
- 
+* the credentials of `ec2-user` and `jenkins-job` was already found preserved in the Jenkins UI. same is used in the pipeline.
 
-## To run application
+* pipe line contains two stages i.e. `build` and `deploy`
 
-    Install httpd:
-    sudo yum install httpd
+* the pipeline is configured with SCM Polling to achive pipeline trigger on every git commit.
 
-    Install created rpm, e.g.:
-     sudo rpm -ip netent-slot-1.0.1-1.el7.centos.x86_64.rpm
+* the git hook `post-commit` is used to report the jenkins back about commit through curl api call.
 
+* tried achiving traceability and reproducibility of RPM, using git tags with conditionalized stage i.e. `when { tag "release-v*"}` / `when {changelong 'release*'}` Not succeeded in this within the given timeframe. hence submitting.
 
-## To develop/test locally, use Vagrant (runs CentOS)
+* the Jenkins pipeline is tested with successful build and deploy stages 
+* the application currently running at http://18.195.116.69/ after pipline trigger.
 
-    ''' 
-    vagrant plugin install vagrant-vbguest // to install VirtualBox Guest Additions automatically.
-    vagrant up
-    vagrant ssh
-    '''
-
- 
-
-## To deploy
-Pushing to origin and trigger the build on Jenkins, http://35.159.8.210:8080/job/slot-master-pl/
-
-TODO: Automate this at last! Trigger pipeline job on commit.
+Thanks for the learning oportunity provided with this assignment.
