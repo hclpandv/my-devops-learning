@@ -1,6 +1,10 @@
-## New Tasks | 12 OCT 2018
+## New Tasks | 21 OCT 2018
+
+https://jenkins.io/blog/2018/05/16/pipelines-with-git-tags/
 
 https://www.thegeekstuff.com/2010/07/rpm-command-examples/
+
+## New Tasks | 12 OCT 2018
 
 https://gist.github.com/drgarcia1986/386a7546fa9c8ba47f39
 
