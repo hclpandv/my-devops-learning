@@ -1,3 +1,11 @@
+## New Tasks | 26 OCT 2018 | For Ashwani
+
+https://dzone.com/articles/using-docker-to-create-a-mysql-server
+https://www.tutorialspoint.com/flask/flask_sqlalchemy.htm
+
+https://github.com/ushasm/relayr/
+
+
 ## New Tasks | 21 OCT 2018
 
 https://jenkins.io/blog/2018/05/16/pipelines-with-git-tags/
