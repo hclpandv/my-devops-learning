@@ -1,4 +1,4 @@
-## New Tasks | 26 OCT 2018 | For Ashwani
+## New Tasks | 26 OCT 2018 | For Ashwani Kumar
 
 https://medium.com/@shamir.stav_83310/dockerizing-a-flask-mysql-app-with-docker-compose-c4f51d20b40d
 https://dzone.com/articles/using-docker-to-create-a-mysql-server
