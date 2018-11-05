@@ -1,3 +1,8 @@
+## Lamp related 
+
+http://adamish.com/blog/archives/110
+
+
 ## New Tasks | 26 OCT 2018 | For Ashwani Kumar
 
 https://github.com/gliderlabs/registrator/issues/320  
