@@ -2,6 +2,8 @@
 
 http://adamish.com/blog/archives/110
 
+https://www.ansible.com/blog/how-i-switched-from-docker-compose-to-pure-ansible
+
 
 ## New Tasks | 26 OCT 2018 | For Ashwani Kumar
 
