@@ -1,5 +1,7 @@
 ## Lamp related 
 
+![image](https://user-images.githubusercontent.com/13016162/48346920-ae68e300-e6a2-11e8-9a82-1cd2f5dca41b.png)
+
 http://adamish.com/blog/archives/110
 
 https://www.ansible.com/blog/how-i-switched-from-docker-compose-to-pure-ansible
